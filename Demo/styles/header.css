@@ -1,0 +1,121 @@
+.header {
+    height: 90px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.16);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: rgb(220, 233, 248);
+}
+
+.search-bar {
+    flex: 1;
+    height: 35px;
+    margin-right: 15px;
+    padding-left: 10px;
+    border-width: 1px;
+    border-style: solid;
+    /* border-color: rgb(192,192,192); */
+    border-color: rgb(110, 193, 221);
+    border-radius: 5px;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.06);
+    width: 0;
+}
+
+.search-bar::placeholder {
+    font-family: Arial;
+    font-size: 15px;
+    color: rgb(119, 198, 224);
+}
+
+
+.left {
+    width: 150px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 60px;
+}
+
+.search-icon {
+    height: 25px;
+    position: relative;
+}
+
+.home-icon-container .tooltip,
+.email-icon-container .tooltip {
+    font-family: Arial;
+    position:absolute;
+    background-color: rgb(150, 159, 202);
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.home-icon-container:hover .tooltip,
+.email-icon-container:hover .tooltip {
+    opacity: 1;
+}
+
+.middle {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin-left: 60px;
+    margin-right: 50px;
+    max-width: 700px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    width: 180px;
+    justify-content: space-around;
+}
+
+.home-icon {
+    height: 50px;
+    
+}
+.email-icon {
+    height: 50px;
+}
+
+.home-icon-container,
+.email-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.email-count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(201, 3, 3);
+    color: white;
+    font-family: Arial;
+    font-size: 15px;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 12px;
+}
